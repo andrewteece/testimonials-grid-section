@@ -120,11 +120,42 @@ h3 {
 }
 /* UTILITY CLASSES */
 
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
 
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
 
+.bg__primary--400 {
+  background: var(--clr-primary-400)
+}
 
+.bg__secondary--400 {
+  background: var(--clr-secondary-400)
+}
 
+.bg__secondary--500 {
+  background: var(--clr-secondary-500)
+}
 
+.bg__neutral--100 {
+  background: var(--clr-neutral-100)
+}
+
+.text__neutral--100 {
+  color: var(--clr-neutral-100);
+}
+
+.text__secondary--400 {
+  color: var(--clr-secondary-400);
+}
+
+.border__primary--400 {
+  border: 2px solid hsl(264, 82%, 70%);
+}
 
 /* FEM ATTRIB */
 
