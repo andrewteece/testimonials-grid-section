@@ -154,8 +154,6 @@ h3 {
   border: 2px solid hsl(264, 82%, 70%);
 }
 
-
-
 /* COMPONENTS */
 
 .main__grid {
@@ -182,7 +180,7 @@ h3 {
 
 .testimonial:nth-child(1) {
   grid-area: one;
-  grid-column: span 2; 
+  /*grid-column: span 2;*/
 }
 
 .testimonial:nth-child(2) {
@@ -195,20 +193,16 @@ h3 {
 
 .testimonial:nth-child(4) {
   grid-area: four;
-  grid-column: span 2; 
+  /*grid-column: span 2;*/
 }
 
 .testimonial:nth-child(5) {
   grid-area: five;
 }
 
-/*  #grid-col-span-2 {
-  grid-column: span 2; 
-} */
-
-@media screen and (min-width: 33em) {
+@media (min-width: 33em) {
   .main__grid {
-      grid-template-areas:
+    grid-template-areas:
       "one one"
       "two three"
       "five five"
@@ -216,33 +210,32 @@ h3 {
   }
 }
 
-@media screen and (min-width: 38em) {
+@media (min-width: 38em) {
   .main__grid {
     grid-template-areas:
-     'one one'
-     'two five'
-     'three five'
-     'four four';
+      "one one"
+      "two five"
+      "three five"
+      "four four";
   }
 }
 
-@media screen and (min-width: 54em) {
+@media (min-width: 54em) {
   .main__grid {
-      grid-template-areas:
+    grid-template-areas:
       "one one two"
       "five five five"
       "three four four";
   }
 }
 
-@media screen and (min-width: 75em) {
+@media (min-width: 75em) {
   .main__grid {
-      grid-template-areas:
+    grid-template-areas:
       "one one two five"
       "three four four five";
   }
 }
-
 
 .testimonial .quote {
   background-image: url(/images/bg-pattern-quotation.svg);
@@ -264,7 +257,7 @@ h3 {
 
 .testimonial .position {
   font-size: var(--fs-300);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .testimonial > p:first-of-type {
@@ -273,7 +266,7 @@ h3 {
 }
 
 .testimonial > p:last-of-type {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* FEM ATTRIB */
